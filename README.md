@@ -26,7 +26,16 @@ The general steps and methods we used are the following:
 - Fit and adapt the model to our dataset
 - Generate a time-series forecast for x number of hours and days forward.
 
-In Fig.4 we are comparing our predictions with the actual values from the dataset. Orange is the actual values in the dataset. Comparing the two we can see that our model generally captures both accuracy and seasonality of the data leading to fairly accurate predictions. 
+## Results
+
+![Figure 1](./assets/Figure_1.png)
+
+Black dots in Fig.1 above represent the actual values from the training dataset, and dark blue represents the predicted values from our predictor. We also plot a confidence interval as the light blue, which you can see becomes bigger and more uncertain the longer you try to predict into the future.
+
+
+![Figure 2](assets/Figure_2.png)
+
+In Fig.2 above we are comparing our predictions with the actual values from the dataset. Orange is the actual values in the dataset. Comparing the two we can see that our model generally captures both accuracy and seasonality of the data leading to fairly accurate predictions. 
 
 To help us quantify the accuracy, we used MSE, MAE, and MAPE as error metrics for the model. MAPE is the most telling metric since it helps us understand the percent error on the absolute value while being unconcerned about the time series' absolute magnitude. The final MAPE was 13.61 % after some hyperparameter tuning.
 
